@@ -10,6 +10,10 @@ app.use(cors({
 }));
 app.use(express.json());
 
+app.get('/', (req, res) => {
+    res.send('Välkommen på bröllop app')
+});
+
 const bcryptFunctions = require("./bcrypt");
 const {
     res
