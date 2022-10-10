@@ -6,7 +6,7 @@ const jwt = require("jsonwebtoken");
 
 
 app.use(cors({
-    origin: "https://brollopsbackend.onrender.com/"
+    origin: "*"
 }));
 app.use(express.json());
 
